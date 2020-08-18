@@ -34,3 +34,4 @@ var Player = (function (_super) {
     return Player;
 }(egret.Sprite));
 __reflect(Player.prototype, "Player");
+//# sourceMappingURL=Player.js.map

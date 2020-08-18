@@ -132,3 +132,4 @@ var Game = (function (_super) {
     return Game;
 }(egret.Sprite));
 __reflect(Game.prototype, "Game");
+//# sourceMappingURL=Game.js.map

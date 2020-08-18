@@ -27,3 +27,4 @@ var GameMainEvent = (function (_super) {
     return GameMainEvent;
 }(egret.EventDispatcher));
 __reflect(GameMainEvent.prototype, "GameMainEvent");
+//# sourceMappingURL=GameMainEvent.js.map

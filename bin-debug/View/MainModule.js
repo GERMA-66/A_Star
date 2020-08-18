@@ -32,3 +32,4 @@ var MainModule = (function (_super) {
     return MainModule;
 }(egret.Sprite));
 __reflect(MainModule.prototype, "MainModule");
+//# sourceMappingURL=MainModule.js.map

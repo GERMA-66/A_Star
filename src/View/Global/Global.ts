@@ -8,8 +8,8 @@ class Global {
         return this._instance;
     }
 
-    public mapCol: number = 20;//地图的列数
-    public mapRow: number = 20;//地图行数
+    public mapCol: number = 10;//地图的列数
+    public mapRow: number = 10;//地图行数
     public mapWidth: number = 50;//地图宽度
     public mapHeight: number = 50;//地图高度
     public mapOffset: number = 10;//地图之间间距

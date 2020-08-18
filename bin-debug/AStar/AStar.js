@@ -158,3 +158,4 @@ var astar;
     astar.AStar = AStar;
     __reflect(AStar.prototype, "astar.AStar");
 })(astar || (astar = {}));
+//# sourceMappingURL=AStar.js.map

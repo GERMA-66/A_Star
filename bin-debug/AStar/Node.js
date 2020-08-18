@@ -20,3 +20,4 @@ var astar;
     astar.Node = Node;
     __reflect(Node.prototype, "astar.Node");
 })(astar || (astar = {}));
+//# sourceMappingURL=Node.js.map
