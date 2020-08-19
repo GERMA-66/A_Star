@@ -128,7 +128,8 @@ class GameMain extends egret.Sprite {
 
         var playerPos: egret.Point = Global.instance.positionChangeIndex(this._player.x, this._player.y);
         var playerGrid: Grid = Global.instance.mapArr[playerPos.x][playerPos.y];
-        Global.instance.dfs(playerGrid, this._endGrid, true);
+
+        this.dfs(playerGrid);
 
         var arr: Grid[] = Global.instance.openPosArr;
         /**测试代码 */
@@ -159,6 +160,15 @@ class GameMain extends egret.Sprite {
                 }, this);
             }, this, 101);
         }
+    }
+
+    private bfs(playerGrid: Grid): void {
+        Global.instance.bfs(playerGrid, this._endGrid);
+    }
+
+    private dfs(playerGrid: Grid): void {
+        Global.instance.startGrid = playerGrid;
+        Global.instance.dfs(playerGrid, this._endGrid, true);
     }
 
 }
