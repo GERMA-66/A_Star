@@ -162,9 +162,6 @@ class GameMain extends egret.Sprite {
         }
     }
 
-    private bfs(playerGrid: Grid): void {
-        Global.instance.bfs(playerGrid, this._endGrid);
-    }
 
     private dfs(playerGrid: Grid): void {
         Global.instance.startGrid = playerGrid;

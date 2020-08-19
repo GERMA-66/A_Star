@@ -105,7 +105,7 @@ var GameMain = (function (_super) {
         this.resetGridState();
         var playerPos = Global.instance.positionChangeIndex(this._player.x, this._player.y);
         var playerGrid = Global.instance.mapArr[playerPos.x][playerPos.y];
-        Global.instance.dfs(playerGrid, this._endGrid, true);
+        this.dfs(playerGrid);
         var arr = Global.instance.openPosArr;
         /**测试代码 */
         for (var i = 0; i < arr.length; i++) {
@@ -134,6 +134,10 @@ var GameMain = (function (_super) {
                 }, _this);
             }, this, 101);
         }
+    };
+    GameMain.prototype.dfs = function (playerGrid) {
+        Global.instance.startGrid = playerGrid;
+        Global.instance.dfs(playerGrid, this._endGrid, true);
     };
     return GameMain;
 }(egret.Sprite));
